@@ -7,6 +7,7 @@ import About from "./Pages/Product"
 import Header from "./Components/Header"
 import Product from "./Pages/Product";
 import View from "./Pages/View";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/view/:id" element={<View />} />
         <Route path="/product/:id" element={<Product />} />
       </Routes>
+      <Footer/>
     </>
   );
 }
