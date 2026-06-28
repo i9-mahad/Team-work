@@ -13,13 +13,13 @@ function BlogView({ Badeeco }) {
 
   return (
     <>
-      <div className="  p-10 ">
+      <div className="  pt-10 ">
 
-        <div className=" flex w-500 gap-10  ">
+        <div className=" flex gap-10  ">
           <img
             src={singleProduct.image}
             alt=""
-            className="w-[600px] h-200 rounded-xl"
+            className="w-[550px] h-200 rounded-xl"
           />
           <img
             src={singleProduct.image2}
@@ -27,7 +27,7 @@ function BlogView({ Badeeco }) {
             className="w-[600px] h-200 rounded-xl  "
           />
         </div>
-        <p className="text-black-600 mb-3 mt-20">
+        <p className="text-black-600 mb-3 mt-20 ">
             {singleProduct.description2}
           </p>
 
@@ -48,7 +48,7 @@ function BlogView({ Badeeco }) {
           </h1>
 
 
-          <p className="text-gray-600 mb-3 w-100">
+          <p className="text-gray-600 mb-3 w-100 h-100 ">
             {singleProduct.description}
           </p>
 
