@@ -5,7 +5,8 @@ import Data from "./Components/Data";
 import Home from "./Pages/Home";
 import About from "./Pages/Product"
 import Header from "./Components/Header"
-
+import Product from "./Pages/Product";
+import View from "./Pages/View";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
           path="/blog/:id"
           element={<BlogView Badeeco={Data} />}
         />
-
+        <Route path="/product"element={<Product/>} />
+        <Route path="/view/:id" element={<View />} /> 
       </Routes>
     </>
   );

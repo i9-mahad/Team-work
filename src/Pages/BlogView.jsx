@@ -6,7 +6,7 @@ function BlogView({ Badeeco }) {
   const singleProduct = Badeeco.find(
     (item) => item.id === Number(id)
   );
-cls
+
   if (!singleProduct) {
     return <h1>Product Not Found</h1>;
   }
