@@ -11,10 +11,10 @@ import View from "./Pages/View";
 function App() {
   return (
     <>
-    <Header/>
+      <Header />
       <Routes>
-        <Route path="/"element={<Home/>} />
-        <Route path="/about"element={<About/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route
           path="/blog"
           element={<Blog Data={Data} />}
@@ -24,8 +24,9 @@ function App() {
           path="/blog/:id"
           element={<BlogView Badeeco={Data} />}
         />
-        <Route path="/product"element={<Product/>} />
-        <Route path="/view/:id" element={<View />} /> 
+        <Route path="/product" element={<Product />} />
+        <Route path="/view/:id" element={<View />} />
+        <Route path="/product/:id" element={<Product />} />
       </Routes>
     </>
   );
